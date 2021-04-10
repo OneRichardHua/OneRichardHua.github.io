@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCB63: Design and Analysis of Data CSCB63: Design and Analysis of Data </title>
+    <link rel="stylesheet" href="/css/index">
+</head>
+<body>
+    
+    <!-- NAVIGATION BAR HTML -->
+    <div class="navigation">
+        <nav class="nav-bar">
+            <image class = "utscLogo" src="static/utscPicture2.png"></image>
+            <!-- HOME BUTTON -->
+            <a id = "homeButton" href="/">Home</a>
+            <div  class="dropDown">
+                <span>
+                    Academics
+                </span>
+
+                <div id = "academicsButton" class = "dropDownContent">
+                    
+                    <a id = "assignmentButton" href="/assignments">📝 Assignments</a>
+                    <a id = "syllabusButton" href="/syllabus">📔 Syllabus</a>
+                    <a id = "testButton" href="/tests">🏹 Tests</a>
+                    <a id = "labsButton" href="/dummypdf">🧪 Labs</a>
+                </div>
+            </div>
+            
+            <!-- CONNECT BUTTON -->
+            <div  class="dropDown">
+                <span>
+                    Connect
+                </span>
+                
+                <div id = "connectButton" class = "dropDownContent">
+                    <a id = "teamButton" href="/team">👁‍🗨Team</a>
+                    <a id = "feedbackButton" href="/sendfeedback">💬Feedback</a>
+                </div>
+            </div>
+            
+            <!-- EXTERNAL BUTTON -->
+            <div  class="dropDown">
+                <span>
+                    External
+                </span>
+                <div id = "externalButton" class = "dropDownContent">
+                    <a id = "piazzaButton" href="https://piazza.com/">🌐Piazza</a>
+                    <a id = "markusButton" href="https://markus.utsc.utoronto.ca">🌐Markus</a>
+                </div>
+            </div>
+            <div  class="dropDown">
+                <span>
+                    {{username}}
+                </span>
+                <div id = "userButton" class = "dropDownContent">
+                    <a id = "gradesButton" href="/grades">📑 Grades</a>
+                    {% if isInstructor %}
+                    <a id = "viewRemarkRequestsButton" href="/remarks">📑 Remark Requests</a>
+                    <a id = "viewFeedbackButton" href="/feedback">📑 Feedback</a>
+                    {% endif %}
+                    <a href="/logout">❌Logout</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- END NAVIGATION BAR HTML -->
+        <div class="content">
+            <h1>📔 Syllabus</h1>
+            <p class="flavor-text">This page includes the lectures and tutorials</p>
+            <h2>Lecture Schedule and Tutorials</h2>
+
+            <p><b>Week 1</b><br>
+                <p class="title">Intro, Worst Case Complexity</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                No Tutorial
+            </p>
+
+            <p><b>Week 2</b><br>
+                <p class="title">Balanced Trees</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Tutorial<br>
+                <a href="/dummypdf">Handout</a><br>
+                <a href="/dummypdf">Solution</a><br>
+            </p>
+            
+            <p><b>Week 3</b><br>
+                <p class="title">AVL Trees height and Augment Interval Trees</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Tutorial<br>
+                <a href="/dummypdf">Handout</a><br>
+                <a href="/dummypdf">Solution</a><br>
+            </p>
+
+            <p><b>Week 4</b><br>
+                <p class="title">Finish Interval Trees, Heaps and Graph Search Algorithms</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Tutorial<br>
+                <a href="/dummypdf">Handout</a><br>
+                <a href="/dummypdf">Solution</a><br>
+            </p>
+
+            <p><b>Week 5</b><br>
+                <p class="title">Graph Searches and Minimum Spanning Trees</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Tutorial<br>
+                <a href="/dummypdf">Handout</a><br>
+                <a href="/dummypdf">Solution</a><br>
+            </p>
+            <p><b>Week 6</b><br>
+                <p class="title">Proof of Prims, Dijstra's Algorithm, Strongly Connected Components</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Tutorial<br>
+                <a href="/dummypdf">Handout</a><br>
+                <a href="/dummypdf">Solution</a><br>
+            </p>
+            <p><b>Week 7</b><br>
+                <p class="title">Amortized Analysis</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Tutorial<br>
+                <a href="/dummypdf">Handout</a><br>
+                <a href="/dummypdf">Solution</a><br>
+            </p>
+            <p><b>Week 8</b><br>
+                <p class="title">Disjoint Sets</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Tutorial<br>
+                <a href="/dummypdf">Handout</a><br>
+                <a href="/dummypdf">Solution</a><br>
+            </p>
+            <p><b>Week 9</b><br>
+                <p class="title">Fibonacci Complexity, Probability and Expected Case Analysis</p>
+                Wednesday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Thursday<br>
+                <a href="/dummypdf">PDF</a><br>
+                Tutorial<br>
+                <a href="/dummypdf">Handout</a><br>
+                <a href="/dummypdf">Solution</a><br>
+            </p>
+
+            <h2>Tutorial</h2>
+        </div>
+
+        <div class="footer-container">
+            <footer><a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science at UofT</a><br>Site was designed by Richard Huang and Jeffrey</footer>
+        </div>
+    </div>
+</body>
+</html>
