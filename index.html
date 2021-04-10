@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCB63: Design and Analysis of Data CSCB63: Design and Analysis of Data </title>
+    <link rel="stylesheet" href="/css/index">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR HTML -->
+    <div class="navigation">
+        <nav class="nav-bar">
+            <image class = "utscLogo" src="static/utscPicture2.png"></image>
+            <!-- HOME BUTTON -->
+            <a id = "homeButton" href="/">Home</a>
+            <div  class="dropDown">
+                <span>
+                    Academics
+                </span>
+
+                <div id = "academicsButton" class = "dropDownContent">
+                    
+                    <a id = "assignmentButton" href="/assignments">📝 Assignments</a>
+                    <a id = "syllabusButton" href="/syllabus">📔 Syllabus</a>
+                    <a id = "testButton" href="/tests">🏹 Tests</a>
+                    <a id = "labsButton" href="/dummypdf">🧪 Labs</a>
+                </div>
+            </div>
+            
+            <!-- CONNECT BUTTON -->
+            <div  class="dropDown">
+                <span>
+                    Connect
+                </span>
+                
+                <div id = "connectButton" class = "dropDownContent">
+                    <a id = "teamButton" href="/team">👁‍🗨Team</a>
+                    <a id = "feedbackButton" href="/sendfeedback">💬Feedback</a>
+                </div>
+            </div>
+            
+            <!-- EXTERNAL BUTTON -->
+            <div  class="dropDown">
+                <span>
+                    External
+                </span>
+                <div id = "externalButton" class = "dropDownContent">
+                    <a id = "piazzaButton" href="https://piazza.com/">🌐Piazza</a>
+                    <a id = "markusButton" href="https://markus.utsc.utoronto.ca">🌐Markus</a>
+                </div>
+            </div>
+            <div  class="dropDown">
+                <span>
+                    {{username}}
+                </span>
+                <div id = "userButton" class = "dropDownContent">
+                    <a id = "gradesButton" href="/grades">📑 Grades</a>
+                    {% if isInstructor %}
+                    <a id = "viewRemarkRequestsButton" href="/remarks">📑 Remark Requests</a>
+                    <a id = "viewFeedbackButton" href="/feedback">📑 Feedback</a>
+                    {% endif %}
+                    <a href="/logout">❌Logout</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- END NAVIGATION BAR HTML -->
+
+    
+    
+    <div class="content">
+
+        <h1>📚 CSCB63: Design and Analysis of Data  </h1>
+        <p><b>Instructor:</b> Dr. Anna Bretscher<br>
+            <b>Email:</b> anna.bretscher@utoronto.ca<br>
+            <b>Office:</b> IC 493</p>
+        <p>Design, analysis, implementation and comparison of efficient data structures for common abstract data types. Priority queues: heaps and mergeable heaps. Dictionaries: balanced binary search trees, B-trees, hashing. Amortization: data structures for managing dynamic tables and disjoint sets. Data structures for representing graphs. Graph searches.</p>
+        <p><b>Exclusion</b> CSC263H, CSC265H, (CSCC78H)<br>
+        <b>Prerequisite</b> CSCB36H or (CSCB38H) & [CGPA 2.75 or enrolment in a CSC subject POSt]Prerequisite CSCB36H or (CSCB38H) & [CGPA 2.75 or enrolment in a CSC subject POSt]<br>
+        <b>Syllabus</b></p>
+        <hr>
+        <h2>📢 News</h2>
+        <p>Assignment 2 Deadline Extended</p>
+        <p>Test 2 remark requests open Feb 3 - 10</p>
+
+
+        
+    </div>
+
+
+    </div>
+    <div class="footer-container">
+        <footer>
+            <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">
+                Faculty of Computer Science at UofT</a><br>
+                Site was designed by Richard Huang and Jeffrey
+        </footer>
+    </div>
+</body>
+
+<script>
+    for (var i = 0; i<10; i++)
+    {
+        alert(i);
+    }
+
+</script>
+</html>
