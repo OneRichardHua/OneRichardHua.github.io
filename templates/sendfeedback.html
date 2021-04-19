@@ -4,14 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSCB63: Design and Analysis of Data CSCB63: Design and Analysis of Data </title>
-    <link rel="stylesheet" href="/css/index">
+    <link rel="stylesheet" href="static/index.css">
 </head>
 <body>
-    <!-- NAVIGATION BAR HTML -->
     <div class="navigation">
         <nav class="nav-bar">
+
             <image class = "utscLogo" src="static/utscPicture2.png"></image>
-            <!-- HOME BUTTON -->
+
             <a id = "homeButton" href="/">Home</a>
             <div  class="dropDown">
                 <span>
@@ -20,52 +20,22 @@
 
                 <div id = "academicsButton" class = "dropDownContent">
                     
-                    <a id = "assignmentButton" href="/assignments">📝 Assignments</a>
-                    <a id = "syllabusButton" href="/syllabus">📔 Syllabus</a>
-                    <a id = "testButton" href="/tests">🏹 Tests</a>
-                    <a id = "labsButton" href="/dummypdf">🧪 Labs</a>
+                    <a id = "assignmentButton" href="templates/assignments.html">📝 Assignments</a>
+                    <a id = "syllabusButton" href="templates/syllabus.html">📔 Syllabus</a>
+                    <a id = "testButton" href="templates/tests.html">🏹 Tests</a>
                 </div>
             </div>
             
-            <!-- CONNECT BUTTON -->
             <div  class="dropDown">
                 <span>
                     Connect
                 </span>
-                
                 <div id = "connectButton" class = "dropDownContent">
-                    <a id = "teamButton" href="/team">👁‍🗨Team</a>
-                    <a id = "feedbackButton" href="/sendfeedback">💬Feedback</a>
-                </div>
-            </div>
-            
-            <!-- EXTERNAL BUTTON -->
-            <div  class="dropDown">
-                <span>
-                    External
-                </span>
-                <div id = "externalButton" class = "dropDownContent">
-                    <a id = "piazzaButton" href="https://piazza.com/">🌐Piazza</a>
-                    <a id = "markusButton" href="https://markus.utsc.utoronto.ca">🌐Markus</a>
-                </div>
-            </div>
-            <div  class="dropDown">
-                <span>
-                    {{username}}
-                </span>
-                <div id = "userButton" class = "dropDownContent">
-                    <a id = "gradesButton" href="/grades">📑 Grades</a>
-                    {% if isInstructor %}
-                    <a id = "viewRemarkRequestsButton" href="/remarks">📑 Remark Requests</a>
-                    <a id = "viewFeedbackButton" href="/feedback">📑 Feedback</a>
-                    {% endif %}
-                    <a href="/logout">❌Logout</a>
-
+                    <a id = "teamButton" href="/templates/team.html">About Me</a>
                 </div>
             </div>
         </nav>
     </div>
-    <!-- END NAVIGATION BAR HTML -->
 
     
     
