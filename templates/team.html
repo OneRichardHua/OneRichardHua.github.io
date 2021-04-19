@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCB63: Design and Analysis of Data CSCB63: Design and Analysis of Data </title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR HTML -->
+    <div class="navigation">
+        <nav class="nav-bar">
+            <image class = "utscLogo" src="static/utscPicture2.png"></image>
+            <!-- HOME BUTTON -->
+            <a id = "homeButton" href="/">Home</a>
+            <div  class="dropDown">
+                <span>
+                    Academics
+                </span>
+
+                <div id = "academicsButton" class = "dropDownContent">
+                    
+                    <a id = "assignmentButton" href="/assignments">📝 Assignments</a>
+                    <a id = "syllabusButton" href="/syllabus">📔 Syllabus</a>
+                    <a id = "testButton" href="/tests">🏹 Tests</a>
+                    <a id = "labsButton" href="/dummypdf">🧪 Labs</a>
+                </div>
+            </div>
+            
+            <!-- CONNECT BUTTON -->
+            <div  class="dropDown">
+                <span>
+                    Connect
+                </span>
+                
+                <div id = "connectButton" class = "dropDownContent">
+                    <a id = "teamButton" href="/team">👁‍🗨Team</a>
+                    <a id = "feedbackButton" href="/sendfeedback">💬Feedback</a>
+                </div>
+            </div>
+            
+            <!-- EXTERNAL BUTTON -->
+            <div  class="dropDown">
+                <span>
+                    External
+                </span>
+                <div id = "externalButton" class = "dropDownContent">
+                    <a id = "piazzaButton" href="https://piazza.com/">🌐Piazza</a>
+                    <a id = "markusButton" href="https://markus.utsc.utoronto.ca">🌐Markus</a>
+                </div>
+            </div>
+            <div  class="dropDown">
+                <span>
+                    {{username}}
+                </span>
+                <div id = "userButton" class = "dropDownContent">
+                    <a id = "gradesButton" href="/grades">📑 Grades</a>
+                    {% if isInstructor %}
+                    <a id = "viewRemarkRequestsButton" href="/remarks">📑 Remark Requests</a>
+                    <a id = "viewFeedbackButton" href="/feedback">📑 Feedback</a>
+                    {% endif %}
+                    <a href="/logout">❌Logout</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- END NAVIGATION BAR HTML -->
+        <div class="content">
+            <h1>👁‍🗨 Teams</h1>
+            <p class="flavor-text">The people behind the course</p>
+
+            <p class="instructor">
+                <b>Instructor</b>
+            </p>
+            <p>Anna Bretscher<br>
+                anna.bretscher@utoronto.ca</p>
+                
+            <p class="instructor">
+                <b>
+                Instructor
+                </b>
+            </p>
+            <p>Nick Cheng<br>
+                nick.cheng@utoronto.ca</p>
+
+            <p class="instructor">
+                <b>
+                    Teaching Assistant
+                </b>
+                </p>
+                <p>Lin Fan<br>
+                    lin.fan@mail.utoronto.ca</p>
+            <p class="instructor">
+                <b>
+                    Teaching Assistant
+                </b>
+                </p>
+                <p>Lin Mo<br>
+                    lin.mo@mail.utoronto.ca</p>
+            <p class="instructor">
+                <b>
+                    Teaching Assistant
+                </b>
+                </p>
+                <p>Jiang Xiaobai<br>
+                    jiang.xiaobai@mail.utoronto.ca</p>
+
+        </div>
+        <div class="footer-container">
+            <footer><a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science at UofT</a><br>Site was designed by Richard Huang and Jeffrey</footer>
+        </div>
+    </div>
+</body>
+</html>
