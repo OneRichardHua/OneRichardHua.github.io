@@ -131,6 +131,72 @@ input {
     border: 0.5px solid black;
 }
 
+.flex-wrapper {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10em;
+    /* padding: 2em; */
+    border-radius: 30px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.side-column {
+    flex: 1;
+    height: 500px;
+    /* background-color: var(--bg-darker); */
+    background-color:var(--bg-secondary);
+    padding: 2em;
+    /* margin: 10px; */
+    border-radius: 30px;
+    margin-right: 1em;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.main-column {
+    flex: 3;
+    height: 500px;
+    background-color: var(--bg-secondary);
+    padding: 2em;
+    /* margin: 10px; */
+    border-radius: 30px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+}
+.content {
+    
+    /* height: clamp(0, 100%, 100%); */
+    /* height: 100%; */
+    width: 1200px;
+    /* padding: 2em; */
+    border-radius: 30px;
+    
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+
+    font-family: inherit;
+    
+    background-color:var(--bg-secondary);
+    /* background-color: #f7f7f8; */
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    /* border: 2px solid #d8d8d8; */
+    
+    
+    
+    /* margin: 25px auto; */
+    /* width: 70%; */
+    
+    /* padding: 50px; */
+}
+.content-item {
+    padding: 2em;
+}
+
+
 
 
 .flavor-text {
@@ -221,35 +287,7 @@ input {
     
     
 }
-.content {
-    
-    /* height: clamp(0, 100%, 100%); */
-    /* height: 100%; */
-    width: 1200px;
-    padding: 2em;
-    border-radius: 30px;
-    
-    justify-content: center;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10em;
 
-    font-family: inherit;
-    
-    background-color:var(--bg-secondary);
-    /* background-color: #f7f7f8; */
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
-    /* border: 2px solid #d8d8d8; */
-    
-    
-    
-    /* margin: 25px auto; */
-    /* width: 70%; */
-    
-    /* padding: 50px; */
-}
 
 .divider {
     /* height: 30px; */
