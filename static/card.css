@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap'); */
+/* @import '/static/index.css' */
 body {
     padding:0;
     margin: 0;
     /* background-color: #fff; */
     /* background-color: #17141d; */
     color: white;
-    font-family: 'DM Mono', monospace;
+    /* font-family: 'DM Mono', monospace; */
 }
 
 .card-list {
     display: flex;
-    padding: 1rem;
-    overflow-x: scroll;
+    padding: 3rem;
+    overflow-x:hidden;
 }
 
 /* .card-list::-webkit-scrollbar{
@@ -40,8 +40,9 @@ body {
     border-radius: 16px;
     background: #22262f;
     /* background: #17141d; */
-    box-shadow: 1rem 0 3rem #000;
+    box-shadow: 0 0 2rem 1rem rgb(20, 25, 29);
     /* box-shadow: -1rem 0 3rem #000; */
+    border: 5px solid #272a35;
 
     transition: .2s;
 
@@ -56,12 +57,12 @@ body {
     transform: translateY(-1rem);
 }
 
-.card:hover~.card {
+/* .card:hover~.card {
     transform: translateX(130px);
-}
-.card:not(:first-child) {
+} */
+/* .card:not(:first-child) {
     margin-left: -130px;
-}
+} */
 
 .card-author {
     position: relative;
@@ -74,7 +75,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     display: block;
     overflow: hidden;
     margin: 16px 10px;
@@ -86,8 +87,9 @@ body {
     left: 0;
     width: 60px;
     height: 48px;
+    /* fill: #00ffff21; */
     fill: none;
-    stroke: #ff8a00;
+    stroke: #00ffff;
     stroke-width: 8;
     stroke-linecap: round;
     pointer-events: none;

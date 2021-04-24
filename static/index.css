@@ -83,7 +83,11 @@ footer {
 
     position:fixed;
 }
+.center {
+    margin-left: auto;
+    text-align: center;
 
+}
 .svg-icon {
     width: var(--nav-bar-icon-height);
     height: var(--nav-bar-icon-height);
@@ -177,7 +181,7 @@ input {
     margin-right: auto;
     margin-bottom: 1em;
 
-    font-family: inherit;
+    /* font-family: inherit; */
     
     background-color:var(--bg-secondary);
     /* background-color: #f7f7f8; */
@@ -291,11 +295,12 @@ input {
 
 .divider {
     /* height: 30px; */
-    border: 5px solid var(--alert-bg-color);
+    border: 2px solid var(--bg-secondary);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
 }
 /* CURRENT USE END */
 b {
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    background: var(--alert-bg-color);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
