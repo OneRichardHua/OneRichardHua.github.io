@@ -136,6 +136,16 @@ nav a {
     text-transform: uppercase;
 
     /* box-shadow: 0px 8px 16px 0px #00000033; */
+
+    transition: 0.2s;
+}
+nav a:hover {
+    /* Display */
+
+    /* Dimensions */
+
+    /* Styling */
+    transform: translateY(-.5rem);
 }
 
 /* BASIC ELEMENTS */
