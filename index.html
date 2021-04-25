@@ -3,46 +3,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrivAcademy </title>
-    <link rel="stylesheet" href="static/index.css">
+    <title> Richard Huang's Website </title>
+    <!-- <link rel="stylesheet" href="static/index.css"> -->
+    <link rel="stylesheet" href="static/default.css">
     <link rel="stylesheet" href="static/card.css">
+    <!-- <link rel="stylesheet" href="static/index.css"> -->
 </head>
 
 <body>
     <nav class = "navbar">
         <ul class = "navbar-nav">
             <li class = "nav-item">
-                <a href = "templates/assignments.html"> <p> Home</p></a>
+                <a href = "index.html"> <p class="prettyFontLinks"> Home</p></a>
+            </li>
+            <li class = "nav-item">
+                <a href = "#"> <p class="prettyFontLinks"> Projects</p></a>
+            </li>   
+            <li class = "nav-item">
+                <a href = "#"> <p class="prettyFontLinks"> Resume</p></a>
             </li>
             <!-- <li class = "nav-item">
                 <a href="#" class = "nav-link">
-                    <image class = "utscLogo" src="static/utscPicture2.png"></image>
-                </a>
-            </li>
-
-            <li class = "nav-item">
-                <a href="#" class = "nav-link">
-                    <svg class="svg-icon" viewBox="0 0 20 20">
-                        <path d="M10,1.529c-4.679,0-8.471,3.792-8.471,8.471c0,4.68,3.792,8.471,8.471,8.471c4.68,0,8.471-3.791,8.471-8.471C18.471,5.321,14.68,1.529,10,1.529 M10,17.579c-4.18,0-7.579-3.399-7.579-7.579S5.82,2.421,10,2.421S17.579,5.82,17.579,10S14.18,17.579,10,17.579 M14.348,10c0,0.245-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.201-0.446-0.446s0.2-0.446,0.446-0.446h5C14.146,9.554,14.348,9.755,14.348,10 M14.348,12.675c0,0.245-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.201-0.446-0.446s0.2-0.445,0.446-0.445h5C14.146,12.229,14.348,12.43,14.348,12.675 M7.394,10c0,0.245-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.201-0.446-0.446s0.201-0.446,0.446-0.446h0.849C7.194,9.554,7.394,9.755,7.394,10 M7.394,12.675c0,0.245-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.201-0.446-0.446s0.201-0.445,0.446-0.445h0.849C7.194,12.229,7.394,12.43,7.394,12.675 M14.348,7.325c0,0.246-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.2-0.446-0.446c0-0.245,0.2-0.446,0.446-0.446h5C14.146,6.879,14.348,7.08,14.348,7.325 M7.394,7.325c0,0.246-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.2-0.446-0.446c0-0.245,0.201-0.446,0.446-0.446h0.849C7.194,6.879,7.394,7.08,7.394,7.325"></path>
-                    </svg>
-                </a>
-            </li>
-
-            <li class = "nav-item">
-                <a href="#" class = "nav-link">
-                    <svg class="svg-icon" viewBox="0 0 20 20">
-                        <path d="M10,1.529c-4.679,0-8.471,3.792-8.471,8.471c0,4.68,3.792,8.471,8.471,8.471c4.68,0,8.471-3.791,8.471-8.471C18.471,5.321,14.68,1.529,10,1.529 M10,17.579c-4.18,0-7.579-3.399-7.579-7.579S5.82,2.421,10,2.421S17.579,5.82,17.579,10S14.18,17.579,10,17.579 M14.348,10c0,0.245-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.201-0.446-0.446s0.2-0.446,0.446-0.446h5C14.146,9.554,14.348,9.755,14.348,10 M14.348,12.675c0,0.245-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.201-0.446-0.446s0.2-0.445,0.446-0.445h5C14.146,12.229,14.348,12.43,14.348,12.675 M7.394,10c0,0.245-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.201-0.446-0.446s0.201-0.446,0.446-0.446h0.849C7.194,9.554,7.394,9.755,7.394,10 M7.394,12.675c0,0.245-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.201-0.446-0.446s0.201-0.445,0.446-0.445h0.849C7.194,12.229,7.394,12.43,7.394,12.675 M14.348,7.325c0,0.246-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.2-0.446-0.446c0-0.245,0.2-0.446,0.446-0.446h5C14.146,6.879,14.348,7.08,14.348,7.325 M7.394,7.325c0,0.246-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.2-0.446-0.446c0-0.245,0.201-0.446,0.446-0.446h0.849C7.194,6.879,7.394,7.08,7.394,7.325"></path>
-                    </svg>
-                </a>
-            </li>
-
-            <li class = "nav-item">
-                <a href="#" class = "nav-link">
-                    <svg class="svg-icon" viewBox="0 0 20 20">
-                        <path d="M10,1.529c-4.679,0-8.471,3.792-8.471,8.471c0,4.68,3.792,8.471,8.471,8.471c4.68,0,8.471-3.791,8.471-8.471C18.471,5.321,14.68,1.529,10,1.529 M10,17.579c-4.18,0-7.579-3.399-7.579-7.579S5.82,2.421,10,2.421S17.579,5.82,17.579,10S14.18,17.579,10,17.579 M14.348,10c0,0.245-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.201-0.446-0.446s0.2-0.446,0.446-0.446h5C14.146,9.554,14.348,9.755,14.348,10 M14.348,12.675c0,0.245-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.201-0.446-0.446s0.2-0.445,0.446-0.445h5C14.146,12.229,14.348,12.43,14.348,12.675 M7.394,10c0,0.245-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.201-0.446-0.446s0.201-0.446,0.446-0.446h0.849C7.194,9.554,7.394,9.755,7.394,10 M7.394,12.675c0,0.245-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.201-0.446-0.446s0.201-0.445,0.446-0.445h0.849C7.194,12.229,7.394,12.43,7.394,12.675 M14.348,7.325c0,0.246-0.201,0.446-0.446,0.446h-5c-0.246,0-0.446-0.2-0.446-0.446c0-0.245,0.2-0.446,0.446-0.446h5C14.146,6.879,14.348,7.08,14.348,7.325 M7.394,7.325c0,0.246-0.2,0.446-0.446,0.446H6.099c-0.245,0-0.446-0.2-0.446-0.446c0-0.245,0.201-0.446,0.446-0.446h0.849C7.194,6.879,7.394,7.08,7.394,7.325"></path>
-                    </svg>
+                    <img class = "icon" src="files/images/LI-Logo.png">
                 </a>
             </li> -->
+
+            <li class = "nav-item">
+                <a class = "nav-link" href="https://www.linkedin.com/in/richard-huang-rhx/"  target="_blank">
+                    <img class = "small-linkedin-logo" src="files/images/LI-In-Bug.png">
+                    <!-- <img class="linkedin-logo" src = "files/images/LI-Logo.png"> -->
+                </a>
+            </li>
+
 
 
         </ul>
@@ -89,13 +81,52 @@
                 </nav>
             </div>
         </div> -->
+        <div class="flex-wrapper">
 
-    <h1 class = "center"> 🌳 Resources and Tutorials   </h1>
-    <p class = "center" class="flavor-text"> My List of Resources and tips</p>
+            <div class= "side-column">
+                <img class = "profile-pic"src="files/images/profile.png">
+                <p> Richard Huang</p>
+                <p class="flavor-text"> Aspiring for more knowledge</p>
+            </div>
+            <div class= "main-column">
+                <article class = "card">
+                    <header class = "card-header">
+                        <!-- <p> April 23 2021</p> -->
+                        <a href="templates/timeManagement.html">
+                            <h2> About Me.</h2>
+                        </a>
+                    </header>
+                    <p>
+                        Hello. My name is Richard and I code.
+
+                    </p>
+                        <div class = "author-name">
+                            <div class = "author-name-prefix">
+                                Author
+                            </div>
+                                Richard Huang
+                            <!-- <div class = "author-name">
+                                <div class = "author-name-prefix">
+                                     Presented By
+                                </div>
+                                Richard Huang
+                            </div> -->
+                         </div>
+                </article>
+            </div>
+    
+    
+        
+        
+        </div>
+
+
+
+    <!-- <h1 class = "center-element"> 🌳 Resources and Tutorials   </h1> -->
+    <!-- <p class = "center" class="flavor-text"> My List of Resources and tips</p> -->
     <div class="content">
         <div class = "content-item">
-            <hr class = "divider">
-            <h1 class = "center"> Main Resources</h1>
+            <h1 class = "center-element "> Main Resources</h1>
             <section class = "card-list">
                 <article class = "card">
                     <header class = "card-header">
@@ -104,15 +135,15 @@
                             <h2> Time Management.</h2>
                         </a>
                     </header>
-    
+                    
                     <div class="card-author">
                         <div class = "author-avatar">
-                            <img src ="static/utscPicture2.png"/>
+                            <img src ="files/images/profile.png"/>
                         </div>
                         <svg class = "half-circle" viewBox = "0 0 106 57">
                             <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
                         </svg>
-    
+                        
                         <div class = "author-name">
                             <div class = "author-name-prefix"> Author</div>
                             UTSC AACC
@@ -123,96 +154,46 @@
                         </div>
                     </div>
                 </article>
-    
-                <article class = "card">
-                    <header class = "card-header">
-                        <p> April 23 2021</p>
-                        <a href = "templates/assignments.html">
-                            <h2> Procrastination.</h2>
-                        </a>
-                    </header>
-    
-                    <div class="card-author">
-                        <div class = "author-avatar">
-                            <img src ="static/utscPicture2.png"/>
-                        </div>
-                        <svg class = "half-circle" viewBox = "0 0 106 57">
-                            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                        </svg>
-    
-                        <div class = "author-name">
-                            <div class = "author-name-prefix"> Author</div>
-                            Richard Huang
-                        </div>
-                    </div>
-                </article>
-                <article class = "card">
-                    <header class = "card-header">
-                        <p> April 23 2021</p>
-                        <a href="templates/brilliant.html">
-                            <h2> Web Development Resources.</h2>
-                        </a>
-                    </header>
-    
-                    <div class="card-author">
-                        <div class = "author-avatar">
-                            <img src ="static/utscPicture2.png"/>
-                        </div>
-                        <svg class = "half-circle" viewBox = "0 0 106 57">
-                            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                        </svg>
-    
-                        <div class = "author-name">
-                            <div class = "author-name-prefix"> Author</div>
-                            Richard Huang
-                        </div>
-                    </div>
-                </article>
-                <!-- <article class = "card">
-                    <header class = "card-header">
-                        <p> April 23 2021</p>
-                        <a href="templates/brilliant.html">
-                            <h2> Web Development Resources.</h2>
-                        </a>
-                    </header>
-    
-                    <div class="card-author">
-                        <div class = "author-avatar">
-                            <img src ="static/utscPicture2.png"/>
-                        </div>
-                        <svg class = "half-circle" viewBox = "0 0 106 57">
-                            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                        </svg>
-    
-                        <div class = "author-name">
-                            <div class = "author-name-prefix"> Author</div>
-                            Richard Huang
-                        </div>
-                    </div>
-                </article> -->
+
             </section>
         </div>
         
-
-    
-
-
-    
+        
+        
+        
+        
+        
     </div>
-    <div class="flex-wrapper">
+    <!-- <div class="content">
+        <div class = "content-item">
+            <h1 class = "center-element"> Categories</h1>
+            <section class = "card-list">
+                <article class = "card-small">
+                    <header class = "card-header">
+                        <a href="templates/timeManagement.html">
+                            <h2> STATISTICS</h2>
+                        </a>
+                    </header>
+                </article>
+                <article class = "card-small">
+                    <header class = "card-header">
+                        <a href="templates/timeManagement.html">
+                            <h2> WEB DEVELOPMENT</h2>
+                        </a>
+                    </header>
+                </article>
+                <article class = "card-small">
+                    <header class = "card-header">
+                        <a href="templates/timeManagement.html">
+                            <h2> LINEAR PROGRAMMING </h2>
+                        </a>
+                    </header>
+                </article>
 
-        <div class= "side-column">
-            
+            </section>
         </div>
-        <div class= "main-column">
+    </div> -->
 
-
-        </div>
-
-
-    
-    
-    </div>
     
 
 

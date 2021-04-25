@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap'); */
-/* @import '/static/index.css' */
+@import '/static/default.css';
+
 body {
     padding:0;
     margin: 0;
@@ -28,7 +29,9 @@ body {
     background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
 } */
 
-.card {
+
+
+.card , .card-small {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -38,17 +41,24 @@ body {
     padding: 1.5rem;
 
     border-radius: 16px;
-    background: #22262f;
+    background: var(--bg-darker);
     /* background: #17141d; */
-    box-shadow: 0 0 2rem 1rem rgb(20, 25, 29);
+    box-shadow: 0 0 2rem 1rem var(--box-shadow-color);
     /* box-shadow: -1rem 0 3rem #000; */
-    border: 5px solid #272a35;
+    /* border: 5px solid #272a35; */
 
     transition: .2s;
 
 
     margin: 20px;
 
+}
+.card-small {
+    width: auto;
+    min-width: 250px;
+    height: 250px;
+    padding: .5em;
+    align-items: center;
 }
 .card a {
     text-decoration: none;
@@ -67,13 +77,13 @@ body {
 .card-author {
     position: relative;
     display: grid;
-    grid-template-columns: 75px 1fr;
+    grid-template-columns: 95px 1fr;
     align-items: center;
     margin: 3rem 0 0;
 }
 .author-avatar img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     /* filter: grayscale(100%); */
     display: block;
@@ -85,7 +95,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
+    width: 80px;
     height: 48px;
     /* fill: #00ffff21; */
     fill: none;

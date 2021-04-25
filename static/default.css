@@ -1,0 +1,309 @@
+/* CONVENTIONS  */
+/* DISPLAY
+    display type
+    display settings
+*/
+/* DIMENSIONS 
+    includes:
+    - flex
+    - width and height
+    - min width and height
+    - alignment
+    - margin
+    - padding
+*/
+/* STYLEING
+    includes:
+    - boxshadow
+    - color
+    - border
+
+*/
+/* Same Type Element should go after one another */
+/* Use Variables as much as possible no hard code */
+
+
+/* Root CSS VALUES */
+:root {
+    /* Font Settings */
+    font-size: 16px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* COLORS */
+    --text-primary-dark: #fff;
+    --text-secondary-dark: #b8b8b8;
+    
+    --bg-primary-dark: #0e1316;
+    --bg-secondary-dark: #0e1316;
+    --box-shadow-color: #0b0d0f;
+
+    /* NAVBAR VALUES */
+    --navbar-height: 5em;
+    --navbar-primary-color: var(--bg-primary-dark);
+    --navbar-secondary-color: var(--bg-primary-dark);
+
+    /* COLOR VARIABLES */
+    --body-color: var(--bg-primary-dark);
+
+    --footer-primary-color: #1a242a;
+    /* HEIGHTS */
+    --small-box-dimension: 2em;
+    --medium-box-dimension: 3em;
+    --large-box-dimension: 4em;
+    --column-height: 500px;
+    /* CONTENT RESTRICTIONS */
+    --content-width-restriction: clamp(1200px, 50%, 1200px);
+    --border-radius-restriction: 20px;
+}
+
+/* NAVIGATION BAR */
+/* 
+    navbar
+    navbar-nav
+    nav-item
+
+*/
+.navbar {
+    /* Display */
+
+    /* Dimensions */
+    padding: 10px;
+    margin-bottom: 3em;
+
+    /* Styling */
+    background-color: var(--navbar-primary-color);
+    border-bottom: 2px solid var(--navbar-secondary-color);
+    box-shadow: 0px 0px 16px 16px var(--box-shadow-color);
+
+}
+.navbar-nav {
+    /* DISPLAY */
+    display: flex;
+    flex-direction: row;
+
+
+    /* Dimensions */
+    width: var(--content-width-restriction);
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    align-items: flex-start;
+
+    /* Styling */
+    list-style: none;
+}
+.nav-item {
+    /* Display */
+
+    /* Dimensions */
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    /* Styling */
+
+}
+.nav-item:last-child {
+    /* Display */
+
+    /* Dimensions */
+    margin-left: auto;
+
+    /* Styling */
+    filter: brightness(0) invert(1);
+
+}
+
+nav a {
+    /* Display */
+    /* Dimensions */
+    width: auto;
+    min-width: 100px;
+    padding: 10px 10px;
+
+    left: 0;
+    right: 0;
+    
+    text-align: center;
+    float: left;
+
+    /* Style */
+    
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    /* box-shadow: 0px 8px 16px 0px #00000033; */
+}
+
+/* BASIC ELEMENTS */
+html {
+    /* Display */
+
+    /* Dimensions */
+    height: 100%;
+    margin: 0;
+    /* Styling */
+    
+}
+body {
+    /* Display */
+
+    /* Dimensions */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* Styling */
+    background-color: var(--body-color);
+    margin-bottom: 100px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+p {
+    /* Display */
+
+    /* Dimensions */
+
+    /* Styling */
+    font-size: 1em;
+    color: var(--text-primary-dark);
+    
+}
+h1 {
+    /* Display */
+
+    /* Dimensions */
+    padding: 0;
+    /* Styling */
+    color: var(--text-primary-dark);
+    font-size: 2em;
+}
+h2 {
+    /* Display */
+
+    /* Dimensions */
+
+    /* Styling */
+    color:var(--text-primary-dark);
+    font-size: 1.5em;
+}
+/* CONTENT */
+.content {
+    /* Display */
+    /* Dimensions */
+    width: var(--content-width-restriction);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-self: center;
+    /* Styling */
+    background-color: var(--bg-secondary-dark);
+    border-radius: var(--border-radius-restriction);
+}
+.content-item {
+    /* Display */
+    
+    /* Dimensions */
+    padding: 2em;
+    /* Styling */
+    
+}
+.flex-wrapper {
+    /* Display */
+    display: flex;
+    /* Dimensions */
+    width: var(--content-width-restriction);
+    margin-left: auto;
+    margin-right: auto;
+    /* Styling */
+    
+}
+.side-column {
+    /* Display */
+    flex: 1;
+    /* Dimensions */
+    height: var(--column-height);
+    max-width: 300px;
+    padding: 2em;
+    margin-right: 1em;
+    /* Styling */
+    background-color: var(--bg-secondary-dark);
+    border-radius: var(--border-radius-restriction);
+    box-shadow: 0 0 2rem 1rem var(--box-shadow-color);
+}
+.main-column {
+    /* Display */
+    flex: 3;
+    /* Dimensions */
+    height: var(--column-height);
+    padding: 2em;
+    /* Styling */
+    background-color: var(--bg-secondary-dark);
+    border-radius: var(--border-radius-restriction);
+    box-shadow: 0 0 2rem 1rem var(--box-shadow-color);
+}
+
+/* 
+
+    IMAGES
+
+
+*/
+.linkedin-logo {
+    /* Display */
+    /* Dimensions */
+    width: 12em;
+    height: 3em;
+    padding: 9px;
+    /* Stylling */
+}
+.small-linkedin-logo {
+    /* Display */
+    /* Dimensions */
+    width: var(--large-box-dimension);
+    
+    /* Styling */
+}
+.profile-pic {
+    /* Display */
+    /* Dimensions */
+    width: 300px;
+    height: 350px;
+    /* Styling */
+    border-radius: 20px ;
+    box-shadow: 0 0 2rem 1rem var(--box-shadow-color);
+}
+
+.center-element {
+    /* Display */
+    /* Dimensions */
+    /* Styling */
+    margin-left: auto;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    /* Display */
+
+    /* Dimensions */
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 10em;
+    text-align: center;
+    align-self: center;
+
+    left: 0;
+    right: 0;
+    bottom: auto;
+    position: absolute;
+    /* Styling */
+    color:#00000033;
+    background-color: var(--footer-primary-color);
+}
