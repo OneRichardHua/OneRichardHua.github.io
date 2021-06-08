@@ -26,7 +26,7 @@
 /* Root CSS VALUES */
 :root {
     /* Font Settings */
-    font-size: 16px;
+    font-size: 16px; /* Was 16 */
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     /* COLORS */
@@ -237,14 +237,17 @@ h2 {
     /* Display */
     flex: 1;
     /* Dimensions */
-    height: var(--column-height);
+    height: 100%;
     max-width: 300px;
     padding: 2em;
     margin-right: 1em;
+
+
     /* Styling */
     background-color: var(--bg-secondary-dark);
     border-radius: var(--border-radius-restriction);
     box-shadow: 0 0 2rem 1rem var(--box-shadow-color);
+    
 }
 .main-column {
     /* Display */
@@ -256,6 +259,7 @@ h2 {
     background-color: var(--bg-secondary-dark);
     border-radius: var(--border-radius-restriction);
     box-shadow: 0 0 2rem 1rem var(--box-shadow-color);
+    /* outline: 3px solid var(--box-shadow-color) */
 }
 
 /* 
@@ -282,13 +286,19 @@ h2 {
 .profile-pic {
     /* Display */
     /* Dimensions */
-    width: 300px;
-    height: 350px;
+    width: 150px;
+    height: 175px;
     /* Styling */
     border-radius: 20px ;
     box-shadow: 0 0 2rem 1rem var(--box-shadow-color);
 }
-
+.large-image {
+    /* Display */
+    /* Dimensions */
+    height: auto;
+    width: 40%;
+    /* Styling */
+}
 .center-element {
     /* Display */
     /* Dimensions */
