@@ -298,6 +298,7 @@ h2 {
     height: 400px;
     width: auto;
     /* Styling */
+    border-radius: 20px;
 }
 .center-element {
     /* Display */
