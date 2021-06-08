@@ -295,8 +295,8 @@ h2 {
 .large-image {
     /* Display */
     /* Dimensions */
-    height: auto;
-    width: 40%;
+    height: 400px;
+    width: auto;
     /* Styling */
 }
 .center-element {
